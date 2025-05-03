@@ -11,7 +11,14 @@ import os
 # --- CONFIG ---
 st.set_page_config(page_title="AI Assistant - Kazakhstan Constitution")
 st.title("📘 AI Assistant: Constitution of Kazakhstan")
-
+st.markdown(
+    """
+    This application allows you to upload the Constitution of Kazakhstan in PDF format and ask questions about its content.
+    The AI Assistant will provide answers based on the uploaded document.
+    
+    Made by Yerassyl Salimgerey, Ansar Shangilov, and Dias Trudkhanov
+    """
+)
 openai_api_key = st.text_input("Enter your OpenAI API Key:", type="password")
 
 if not openai_api_key:
